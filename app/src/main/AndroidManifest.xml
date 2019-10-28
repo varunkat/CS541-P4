@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".drivers"></activity>
+        <activity android:name=".races"></activity>
+        <activity android:name=".drivers" />
         <activity android:name=".constructors" />
         <activity android:name=".MainActivity">
             <intent-filter>

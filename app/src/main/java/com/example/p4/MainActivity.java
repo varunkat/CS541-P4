@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+
 
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +12,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button button6;
     private Button drivers;
-    private Button mass;
+    private Button races;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         button6 = (Button) findViewById(R.id.button6);
         drivers = (Button) findViewById(R.id.drivers);
-        mass = (Button) findViewById(R.id.mass);
+        races = (Button) findViewById(R.id.races);
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,18 +37,14 @@ public class MainActivity extends AppCompatActivity {
                 opendrivers();
             }
         });
-        /*length.setOnClickListener(new View.OnClickListener() {
+
+        races.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openlenconv();
+                openraces();
             }
         });
-        mass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openmassconv();
-            }
-        });*/
+
     }
 
     public void openconstructors() {
@@ -58,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void opendrivers() {
         Intent intent = new Intent(this,drivers.class);
+        startActivity(intent);
+    }
+    public void openraces() {
+        Intent intent = new Intent(this,races.class);
         startActivity(intent);
     }
 

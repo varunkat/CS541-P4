@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/f1">
 
     <Button
         android:id="@+id/drivers"
         android:layout_width="323dp"
         android:layout_height="111dp"
         android:text="Drivers"
+        android:background="#FFA53E1E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,10 +22,11 @@
         app:layout_constraintVertical_bias="0.171" />
 
     <Button
-        android:id="@+id/mass"
+        android:id="@+id/races"
         android:layout_width="327dp"
         android:layout_height="103dp"
-        android:text="Mass conversion"
+        android:text="2019 Races and champions"
+        android:background="#C2562A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -36,6 +39,7 @@
         android:layout_width="330dp"
         android:layout_height="113dp"
         android:text="Constructors"
+        android:background="#E48074"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintLeft_toLeftOf="parent"
