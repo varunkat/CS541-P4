@@ -1,0 +1,159 @@
+commit 5955575b8e6dc1493c8781504c4f89d6ad69f626
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Sun Oct 27 23:55:18 2019 -0400
+
+    Updated README
+
+ README.md                                          |  33 +++-
+ app/src/main/AndroidManifest.xml                   |   3 +-
+ app/src/main/java/com/example/p4/MainActivity.java |  22 +--
+ app/src/main/java/com/example/p4/races.java        | 182 +++++++++++++++++++++
+ app/src/main/res/drawable/australia.png            | Bin 0 -> 52053 bytes
+ app/src/main/res/drawable/austria.png              | Bin 0 -> 48889 bytes
+ app/src/main/res/drawable/azerbaijan.png           | Bin 0 -> 52053 bytes
+ app/src/main/res/drawable/bahrain.png              | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/belgium.png              | Bin 0 -> 51447 bytes
+ app/src/main/res/drawable/britain.png              | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/canada.png               | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/china.png                | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/f1.jpg                   | Bin 0 -> 110982 bytes
+ app/src/main/res/drawable/france.png               | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/germany.png              | Bin 0 -> 48889 bytes
+ app/src/main/res/drawable/hungary.png              | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/italy.png                | Bin 0 -> 51447 bytes
+ app/src/main/res/drawable/japan.png                | Bin 0 -> 52053 bytes
+ app/src/main/res/drawable/monaco.png               | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/russia.png               | Bin 0 -> 48697 bytes
+ app/src/main/res/drawable/singapore.png            | Bin 0 -> 57993 bytes
+ app/src/main/res/drawable/spain.png                | Bin 0 -> 48697 bytes
+ app/src/main/res/layout/activity_main.xml          |  10 +-
+ app/src/main/res/layout/activity_races.xml         |  17 ++
+ app/src/main/res/layout/row2.xml                   |  50 ++++++
+ app/src/main/res/values/colors.xml                 |   6 +-
+ 26 files changed, 304 insertions(+), 19 deletions(-)
+
+commit 1fb16810cf65a5966771b1f44a5b6cbf0a18d4d5
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Sun Oct 27 21:58:35 2019 -0400
+
+    Updated the code
+
+ app/src/main/AndroidManifest.xml                   |   2 +
+ app/src/main/java/com/example/p4/MainActivity.java | 140 +++++------------
+ app/src/main/java/com/example/p4/constructors.java | 130 ++++++++++++++++
+ app/src/main/java/com/example/p4/drivers.java      | 173 +++++++++++++++++++++
+ app/src/main/java/com/example/p4/teams.java        |   4 +
+ app/src/main/res/drawable/albon.png                | Bin 0 -> 12654 bytes
+ app/src/main/res/drawable/bottas.png               | Bin 0 -> 14074 bytes
+ app/src/main/res/drawable/carlos.png               | Bin 0 -> 13503 bytes
+ app/src/main/res/drawable/gasly.png                | Bin 0 -> 13722 bytes
+ app/src/main/res/drawable/giovananzi.png           | Bin 0 -> 13932 bytes
+ app/src/main/res/drawable/grosjean.png             | Bin 0 -> 13651 bytes
+ app/src/main/res/drawable/hulk.png                 | Bin 0 -> 14283 bytes
+ app/src/main/res/drawable/kevin.png                | Bin 0 -> 13456 bytes
+ app/src/main/res/drawable/kimi.png                 | Bin 0 -> 15138 bytes
+ app/src/main/res/drawable/kubica.png               | Bin 0 -> 13989 bytes
+ app/src/main/res/drawable/kvyat.png                | Bin 0 -> 13407 bytes
+ app/src/main/res/drawable/leclerc.png              | Bin 0 -> 13596 bytes
+ app/src/main/res/drawable/lewis.png                | Bin 0 -> 14301 bytes
+ app/src/main/res/drawable/max.png                  | Bin 0 -> 13675 bytes
+ app/src/main/res/drawable/norris.png               | Bin 0 -> 12848 bytes
+ app/src/main/res/drawable/perez.png                | Bin 0 -> 13635 bytes
+ app/src/main/res/drawable/ric.png                  | Bin 0 -> 12598 bytes
+ app/src/main/res/drawable/russel.png               | Bin 0 -> 13510 bytes
+ app/src/main/res/drawable/stroll.png               | Bin 0 -> 13247 bytes
+ app/src/main/res/drawable/vettel.png               | Bin 0 -> 13500 bytes
+ app/src/main/res/layout/activity_constructors.xml  |  17 ++
+ app/src/main/res/layout/activity_drivers.xml       |  17 ++
+ app/src/main/res/layout/activity_main.xml          |  48 +++++-
+ app/src/main/res/layout/row.xml                    |   5 +
+ app/src/main/res/layout/row1.xml                   |  50 ++++++
+ 30 files changed, 478 insertions(+), 108 deletions(-)
+
+commit 743841d04dd6ec32927214ce9d66978c1ba564ce
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Sun Oct 27 08:41:12 2019 -0400
+
+    updated the code
+
+ app/src/main/java/com/example/p4/MainActivity.java | 149 +++++++++++++++------
+ app/src/main/java/com/example/p4/MyAdapter.java    |   4 +
+ app/src/main/res/drawable/alfaromeoconst.png       | Bin 0 -> 34419 bytes
+ app/src/main/res/drawable/haasconst.png            | Bin 0 -> 6932 bytes
+ app/src/main/res/drawable/mclarenconst.png         | Bin 0 -> 1443 bytes
+ app/src/main/res/drawable/mercedesconst.png        | Bin 0 -> 6591 bytes
+ app/src/main/res/drawable/racingpointconst.png     | Bin 0 -> 5644 bytes
+ app/src/main/res/drawable/rbconst.png              | Bin 0 -> 8220 bytes
+ app/src/main/res/drawable/renaultconst.png         | Bin 0 -> 6174 bytes
+ app/src/main/res/drawable/sfconst.png              | Bin 0 -> 5094 bytes
+ app/src/main/res/drawable/trconst.png              | Bin 0 -> 5748 bytes
+ app/src/main/res/drawable/williamsconst.png        | Bin 0 -> 16030 bytes
+ app/src/main/res/layout/activity_main.xml          |  19 ++-
+ app/src/main/res/layout/row.xml                    |  45 +++++++
+ 14 files changed, 165 insertions(+), 52 deletions(-)
+
+commit be48ad9b37396557b4cafda372e3585161d59ffc
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Sat Oct 26 22:55:22 2019 -0400
+
+    updated the code
+
+ app/src/main/java/com/example/p4/MainActivity.java | 58 ++++++++++++++++++++--
+ 1 file changed, 54 insertions(+), 4 deletions(-)
+
+commit 4b9a77abf9cebff889d29f6dd1a53d95a2772fd5
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Wed Oct 23 10:29:53 2019 -0400
+
+    Updated the code
+
+ .gitignore                                         |  46 ++----
+ .idea/.name                                        |   1 +
+ .idea/codeStyles/Project.xml                       | 116 ++++++++++++++
+ .idea/gradle.xml                                   |  16 ++
+ .idea/misc.xml                                     |   9 ++
+ .idea/runConfigurations.xml                        |  12 ++
+ .idea/vcs.xml                                      |   6 +
+ app/.gitignore                                     |   1 +
+ app/build.gradle                                   |  29 ++++
+ app/proguard-rules.pro                             |  21 +++
+ .../com/example/p4/ExampleInstrumentedTest.java    |  27 ++++
+ app/src/main/AndroidManifest.xml                   |  21 +++
+ app/src/main/java/com/example/p4/MainActivity.java |  14 ++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++++
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++++++++
+ app/src/main/res/layout/activity_main.xml          |  18 +++
+ app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ app/src/main/res/mipmap-hdpi/ic_launcher.png       | Bin 0 -> 2963 bytes
+ app/src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher.png       | Bin 0 -> 2060 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ app/src/main/res/mipmap-xhdpi/ic_launcher.png      | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ app/src/main/res/mipmap-xxhdpi/ic_launcher.png     | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ app/src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ app/src/main/res/values/colors.xml                 |   6 +
+ app/src/main/res/values/strings.xml                |   3 +
+ app/src/main/res/values/styles.xml                 |  11 ++
+ .../test/java/com/example/p4/ExampleUnitTest.java  |  17 ++
+ build.gradle                                       |  27 ++++
+ gradle.properties                                  |  20 +++
+ gradle/wrapper/gradle-wrapper.jar                  | Bin 0 -> 54329 bytes
+ gradle/wrapper/gradle-wrapper.properties           |   6 +
+ gradlew                                            | 172 +++++++++++++++++++++
+ gradlew.bat                                        |  84 ++++++++++
+ settings.gradle                                    |   2 +
+ 39 files changed, 867 insertions(+), 32 deletions(-)
+
+commit ca9e09d53163c4f51c34d7b656f26bcb4b6dd4dd
+Author: varunkat <54632357+varunkat@users.noreply.github.com>
+Date:   Fri Oct 18 09:55:25 2019 -0400
+
+    Initial commit
+
+ .gitignore | 32 ++++++++++++++++++++++++++++++++
+ README.md  |  1 +
+ 2 files changed, 33 insertions(+)
